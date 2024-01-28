@@ -1,6 +1,7 @@
 module Day01
   class << self
     def tick(args)
+      args.state.text_color ||= { r: 255, g: 255, b: 255 }
       args.state.water_base_y ||= 500
       args.state.water_points ||= 129.times.map { |k|
         { x: 10 * k, y: args.state.water_base_y, f_y: 0 }
