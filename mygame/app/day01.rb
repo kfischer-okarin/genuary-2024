@@ -72,3 +72,5 @@ module Day01
     end
   end
 end
+
+$gtk.reset
